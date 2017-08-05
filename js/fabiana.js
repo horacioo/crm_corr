@@ -9,8 +9,10 @@ angular.module('myApp').controller('fabiana',['$scope', function($scope){
         $scope.objeto="r";
         $scope.Carrega=function(){
             //alert("teste"); 
+            if($scope.objeto!=""){
             $scope.dados.documentos.push($scope.objeto);
             $scope.objeto="";
+        }
         };
         
 }]); 
